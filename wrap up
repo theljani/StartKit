@@ -1,0 +1,27 @@
+Course link: https://app.pluralsight.com/library/courses/javascript-development-environment/table-of-contents
+
+* Module: Package Managment:
+    - Use of npm
+    - Use of nps (Node Package Security) to analyse installed packages, steps to use it:
+            1-  Install it : npm install -g nps
+            2 Run a check : nps check
+
+* Module: Web servers
+
+    - Use of Express (other web servers: browsersync, webpack dev server, live-server, http-server, budo)
+     as a web server, steps:
+
+            1- Import express, path and open methods:
+                  var express = require('express');
+                  var path = require('path');
+                  var open = require('open');
+            2- app.get : specify which route shoul be managed by express
+            3- app.listen: listen to the app on the specified port
+            4- Start the application:  node Server/server.js
+
+    - Use of localtunnel(other packages can be used like now, ngroc, surge) package to expose our
+    localhost through a public Url, steps to use it:
+
+            1- Install localtunnel: npm install -g localtunnel
+            2- Start the application: node Server/server.js
+            3- Start localtunnel: lt --port 3000
